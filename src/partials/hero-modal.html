@@ -1,5 +1,5 @@
 <div class="backdrop is-hidden hero" data-modal>
-  <div class="modal container">
+  <div class="modal hero-modal container">
     <button class="close-btn" type="button" data-modal-close>
       <svg class="close-icon" width="15" height="15">
         <use href="./img/icons.svg#icon-close"></use>
@@ -12,81 +12,81 @@
     </p>
 
     <form class="form">
-      <input
-        type="text"
-        placeholder="Your name*"
-        class="form-input modal-input"
-      />
-      <input
-        type="text"
-        placeholder="Phone number*"
-        class="form-input modal-input"
-      />
-
-      <div class="container-checkbox">
+      <div class="form-wrapper">
         <input
-          class="check-input visually-hidden"
-          id="hoberla"
-          type="checkbox"
-          name="hoberla"
-          value="true"
+          type="text"
+          placeholder="Your name*"
+          class="form-input modal-input"
         />
-        <label for="hoberla" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="./img/icons.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="./img/icons.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Ascent to Hoverla
-        </label>
-      </div>
-
-      <div class="container-checkbox">
         <input
-          class="check-input visually-hidden"
-          id="bukovel"
-          type="checkbox"
-          name="bukovel"
-          value="true"
+          type="text"
+          placeholder="Phone number*"
+          class="form-input modal-input"
         />
-        <label for="bukovel" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="./img/icons.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="./img/icons.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Ski tour to Bukovel
-        </label>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              id="hoverla"
+              type="checkbox"
+              name="hoverla"
+              value="true"
+            />
+            <label for="hoverla" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="./img/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Ascent to Hoverla
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              id="bukovel"
+              type="checkbox"
+              name="bukovel"
+              value="true"
+            />
+            <label for="bukovel" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="./img/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Ski tour to Bukovel
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              type="checkbox"
+              id="carpathians"
+              name="carpathians"
+              value="true"
+            />
+            <label for="carpathians" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="./img/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Week in Carpathians
+            </label>
+          </li>
+        </ul>
       </div>
-
-      <div class="container-checkbox">
-        <input
-          class="check-input visually-hidden"
-          type="checkbox"
-          id="carpathians"
-          name="carpathians"
-          value="true"
-        />
-        <label for="carpathians" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="./img/icons.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="./img/icons.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Week in Carpathians
-        </label>
-      </div>
-
-      <button class="modal-form-btn" type="submit">Call me</button>
+      <button class="hero-form-btn" type="submit">Call me</button>
     </form>
   </div>
 </div>

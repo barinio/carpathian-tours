@@ -1,7 +1,7 @@
 const refs = {
   modal: document.querySelector('[data-modal]'),
   tourBackdrop: document.querySelectorAll('.tour-backdrop'),
-  submitBtn: document.querySelector('.modal-form-btn'),
+  submitBtn: document.querySelector('.hero-form-btn'),
 
   bookTourBtn: document.querySelectorAll('[data-tour-modal-close]'),
 };

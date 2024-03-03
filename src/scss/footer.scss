@@ -4,8 +4,19 @@
 
 	h2 {
 		font-size: 28px;
+		@media (width>767px) {
+			font-size: 32px;
+		}
 	}
 }
+.footer-wrapper {
+	@media (width>767px) {
+		display: flex;
+		gap: 137px;
+		justify-content: center;
+	}
+}
+
 .contacts {
 	display: flex;
 	flex-direction: column;
@@ -16,8 +27,14 @@
 		gap: 4px;
 		align-items: center;
 		padding: 8px 0;
+		a {
+			@media (width>767px) {
+				font-size: 18px;
+			}
+		}
 	}
 }
+
 .contacts svg {
 	stroke: none;
 	fill: #f7fbfb;
@@ -32,16 +49,30 @@
 	display: flex;
 	gap: 32px;
 }
-.created {
-	margin-top: 40px;
+.created,
+.creater {
 	display: flex;
 	gap: 8px;
 	justify-content: center;
 	align-items: center;
+	font-size: 16px;
+	color: #a3a5a3;
+}
+.created {
+	margin-top: 40px;
+}
+.creater {
+	font-size: 18px;
+	margin-top: 20px;
+	color: lightblue;
+	&:hover {
+		color: #5b86a1;
+	}
 }
 .icon-copyright {
 	stroke: #a3a5a3;
 }
+
 @media (max-width: 330px) {
 	.container.footer-container {
 		padding-left: 20px;
