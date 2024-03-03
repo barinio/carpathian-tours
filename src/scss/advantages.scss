@@ -1,0 +1,58 @@
+.container .list-our-advantages {
+	background: url("../img/mobile-advantages-bg.png") 50% / auto auto no-repeat;
+}
+.list-our-advantages {
+	padding: 84px 2px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+
+	li {
+		display: flex;
+		gap: 8px;
+		padding: 8px 7px 8px 22px;
+		align-items: center;
+
+		background-color: #5b86a1;
+		color: #f7fbfb;
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+.icon-star {
+	fill: #f7fbfb;
+	stroke: none;
+}
+
+@media (min-width: 768px) {
+	.container .our-advantages {
+		min-width: 768px;
+	}
+	.container .list-our-advantages {
+		padding: 80px 62px;
+		background:
+			url("../img/tablet-advantages-bg1.png") 0 0/354px no-repeat,
+			url("../img/tablet-advantages-bg2.png") bottom right/354px no-repeat;
+
+		gap: 20px;
+
+		li {
+			padding: 12px 44px;
+			font-size: 20px;
+
+			.icon-star {
+				width: 40px;
+				height: 40px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+}

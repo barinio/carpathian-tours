@@ -1,0 +1,72 @@
+.carpathians {
+	.first-day {
+		background: url("../img/carpathians-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+	}
+	.second-day {
+		background: url("../img/carpathians-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+	}
+	.third-day {
+		background: url("../img/carpathians-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+	}
+	.fourth-day {
+		background: url("../img/carpathians-modal-bg-4.png") 0 0 / 100% 100% no-repeat;
+	}
+	.fifth-day {
+		background: url("../img/carpathians-modal-bg-5.png") 0 0 / 100% 100% no-repeat;
+	}
+	.sixth-day {
+		background: url("../img/carpathians-modal-bg-6.png") 0 0 / 100% 100% no-repeat;
+	}
+	.seventh-day {
+		background: url("../img/carpathians-modal-bg-7.png") 0 0 / 100% 100% no-repeat;
+	}
+
+	.swiper-pagination {
+		width: 170px;
+		bottom: 20px;
+	}
+	.list-plan {
+		margin-bottom: 142px;
+	}
+}
+
+.carpathians-swiper-pagination-bullet {
+	border-radius: 50%;
+	background-color: #a3a5a3;
+	height: 12px;
+	width: 12px;
+
+	&.swiper-pagination-bullet-active {
+		background-color: #f7fbfb;
+	}
+}
+
+.carpathians-progress {
+	background-color: #f7fbfb;
+}
+
+@media (min-width: 768px) {
+	.carpathians {
+		.first-day {
+			background: url("../img/tablet-carpathians-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+		}
+		.second-day {
+			background: url("../img/tablet-carpathians-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+		}
+		.third-day {
+			background: url("../img/tablet-carpathians-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+		}
+		.fourth-day {
+			background: url("../img/tablet-carpathians-modal-bg-4.png") 0 0 / 100% 100% no-repeat;
+		}
+		.fifth-day {
+			background: url("../img/tablet-carpathians-modal-bg-5.png") 0 0 / 100% 100% no-repeat;
+		}
+		.sixth-day {
+			background: url("../img/tablet-carpathians-modal-bg-6.png") 0 0 / 100% 100% no-repeat;
+		}
+		.seventh-day {
+			background: url("../img/tablet-carpathians-modal-bg-7.png") 0 0 / 100% 100% no-repeat;
+		}
+	}
+}

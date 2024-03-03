@@ -1,0 +1,169 @@
+<section class="section upcoming-tours">
+  <h2>Upcoming tours</h2>
+  <div class="container">
+    <!-- Slider main container -->
+    <div class="upcoming-tours-swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper list-upcoming-tours">
+        <!-- Slides -->
+        <li class="swiper-slide tour-card">
+          <picture>
+            <!-- <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews-block/image3_desk.webp    1x,
+                ./img/reviews-block/image3_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/reviews-block/image3_mobile.webp    1x,
+                ./img/reviews-block/image3_mobile@2x.webp 2x
+              "
+              type="image/webp"
+            /> -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/tablet-tours-1.png              1x,
+                ./img/reviews-block/image3_desk@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                ../img/mobile-tours-1.png                1x,
+                ./img/reviews-block/image3_mobile@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              src="../img/mobile-tours-1.png"
+              alt="hoverla-upcoming-tours"
+              height="338"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="tour-card-text">
+            <h3>Ascent to Hoverla</h3>
+            <p>From UAH 4,499/person</p>
+            <button type="button" data-hoverla-modal-open>More details</button>
+          </div>
+        </li>
+        <li class="swiper-slide tour-card">
+          <picture>
+            <!-- <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews-block/image3_desk.webp    1x,
+                ./img/reviews-block/image3_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/reviews-block/image3_mobile.webp    1x,
+                ./img/reviews-block/image3_mobile@2x.webp 2x
+              "
+              type="image/webp"
+            /> -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/tablet-tours-2.png              1x,
+                ./img/reviews-block/image3_desk@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                ../img/mobile-tours-2.png                1x,
+                ./img/reviews-block/image3_mobile@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              src="../img/mobile-tours-2.png"
+              alt="hoverla-upcoming-tours"
+              height="338"
+              loading="lazy"
+            />
+          </picture>
+          <div class="tour-card-text">
+            <h3>Ski tour to Bukovel</h3>
+            <p>From UAH 7,499/person</p>
+            <button type="button" data-bukovel-modal-open>More details</button>
+          </div>
+        </li>
+        <li class="swiper-slide tour-card">
+          <picture>
+            <!-- <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews-block/image3_desk.webp    1x,
+                ./img/reviews-block/image3_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/reviews-block/image3_mobile.webp    1x,
+                ./img/reviews-block/image3_mobile@2x.webp 2x
+              "
+              type="image/webp"
+            /> -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/tablet-tours-3.png              1x,
+                ./img/reviews-block/image3_desk@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                ../img/mobile-tours-3.png                1x,
+                ./img/reviews-block/image3_mobile@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              src="../img/mobile-tours-3.png"
+              alt="hoverla-upcoming-tours"
+              height="338"
+              loading="lazy"
+            />
+          </picture>
+          <div class="tour-card-text">
+            <h3>Week in Carpathians</h3>
+            <p>From UAH 9,999/person</p>
+            <button type="button" data-carpathians-modal-open>
+              More details
+            </button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="switch-btns">
+        <button class="switch-btn swiper-button-prev">
+          <svg class="icon-switch-left" width="28" height="28">
+            <use href="./img/icons.svg#icon-switch-left"></use>
+          </svg>
+        </button>
+        <button class="switch-btn swiper-button-next">
+          <svg class="icon-switch-right" width="28" height="28">
+            <use href="./img/icons.svg#icon-switch-right"></use>
+          </svg>
+        </button>
+      </div>
+      <load ="partials/hoverla-modal.html" />
+      <load ="partials/bukovel-modal.html" />
+      <load ="partials/carpathians-modal.html" />
+    </div>
+  </div>
+</section>

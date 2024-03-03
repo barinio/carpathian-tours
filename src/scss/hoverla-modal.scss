@@ -1,0 +1,176 @@
+.hoverla {
+	.first-day {
+		background: url("../img/hoverla-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+	}
+	.second-day {
+		background: url("../img/hoverla-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+	}
+	.third-day {
+		background: url("../img/hoverla-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+	}
+}
+
+.tour-modal-close-btn svg {
+	stroke: #f7fbfb;
+	z-index: 1;
+}
+.tour-backdrop {
+	& .container {
+		padding: 0;
+	}
+	& .modal {
+		width: 315px;
+	}
+}
+.container-modal {
+	position: relative;
+	min-width: 290px;
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+
+	color: #f7fbfb;
+	line-height: 1.22;
+
+	.tour-modal-title {
+		font-size: 18px;
+		font-weight: 600;
+		padding: 56px 12px 0 48px;
+		margin-bottom: 12px;
+	}
+}
+
+.tours-modal__list {
+	display: flex;
+}
+
+.tour-modal__item-day {
+	border-radius: 0px 8px 8px 0px;
+	background: #5b86a1;
+	max-width: 278px;
+	padding: 14px 0 14px 48px;
+	margin-bottom: 12px;
+	font-weight: 500;
+	line-height: 1.22;
+}
+.list-plan {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding-left: 48px;
+
+	font-weight: 500;
+	margin-bottom: 118px;
+
+	li {
+		min-height: 20px;
+	}
+}
+
+.swiper-pagination {
+	position: absolute;
+	display: flex;
+	gap: 12px;
+	z-index: 1;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 28px;
+	border: none;
+	outline: none;
+
+	cursor: pointer;
+}
+.swiper-pagination-bullet {
+	border-radius: 50%;
+	background-color: #a3a5a3;
+	height: 12px;
+	width: 12px;
+
+	&.swiper-pagination-bullet-active {
+		background-color: #f7fbfb;
+	}
+}
+.hoverla-progress {
+	background-color: #f7fbfb;
+}
+
+.icon-pagination-bullet {
+	fill: #a3a5a3;
+	stroke: none;
+}
+.swiper-slide-active svg {
+	fill: red;
+}
+
+.tour-modal-card {
+	display: flex;
+	flex-direction: column;
+	padding: 28px 15px;
+	gap: 16px;
+
+	p {
+		color: #202321;
+		text-align: center;
+		font-weight: 600;
+	}
+	button {
+		padding: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.hoverla {
+		.first-day {
+			background: url("../img/tablet-hoverla-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+		}
+		.second-day {
+			background: url("../img/tablet-hoverla-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+		}
+		.third-day {
+			background: url("../img/tablet-hoverla-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+		}
+	}
+
+	.container-modal {
+		max-width: 728px;
+
+		.tour-modal-title {
+			padding-left: 60px;
+			font-size: 24px;
+		}
+	}
+
+	.tour-modal__item-day {
+		padding-left: 60px;
+		max-width: 363px;
+	}
+
+	.list-plan {
+		gap: 16px;
+		padding-left: 60px;
+		margin-bottom: 121px;
+	}
+
+	.tour-modal-card {
+		align-items: center;
+		padding: 40px 0;
+		gap: 24px;
+		button {
+			width: 394px;
+			font-size: 20px;
+		}
+	}
+	.backdrop .container {
+		width: 728px;
+	}
+
+	.close-btn {
+		padding: 10px;
+		top: 20px;
+		right: 20px;
+		.close-icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

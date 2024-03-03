@@ -1,0 +1,115 @@
+.reviews-list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.reviews-card {
+	position: relative;
+}
+.avatar {
+	position: absolute;
+	margin-top: 84px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+}
+
+.reviews-card-info {
+	position: relative;
+	border: 1px solid var(--blue);
+	border-top: none;
+	padding-top: 70px;
+
+	height: 318px;
+}
+.review-bg {
+	height: 134px;
+}
+.reviews-text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 0 33px;
+	h3 {
+		font-size: 20px;
+		color: var(--blue);
+		font-weight: 600;
+		text-align: center;
+	}
+	p {
+		line-height: 1.25;
+	}
+}
+
+.flip-btn {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	& svg {
+		fill: #5b86a1;
+		stroke: none;
+
+		&:is(:hover, :focus) {
+			fill: #1b1d1b;
+		}
+	}
+}
+
+.reviews-card.flipped .front {
+	transform: rotateY(180deg);
+}
+.reviews-card.flipped .back {
+	z-index: 1;
+	opacity: 1;
+	transform: rotateY(0deg);
+}
+
+.front {
+	display: block;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-property: transform, opacity;
+	transform: rotateY(0deg);
+}
+.back {
+	display: block;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 0.5s;
+	transition-property: transform, opacity;
+	position: absolute;
+	opacity: 0;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	transform: rotateY(-180deg);
+	z-index: -1;
+}
+
+@media (min-width: 768px) {
+	.reviews-list {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.reviews-card {
+		width: 354px;
+	}
+
+	.reviews-card-info {
+		padding-top: 74px;
+
+		height: 370px;
+	}
+
+	.reviews-text {
+		gap: 24px;
+		padding: 0 20px;
+	}
+}

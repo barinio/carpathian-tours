@@ -1,0 +1,85 @@
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	color: #f7fbfb;
+	font-family: Montserrat;
+	text-align: center;
+	align-items: center;
+
+	background: url("../img/hero_desk_normal.png") 50% / cover no-repeat;
+
+	h1 {
+		width: 311px;
+		text-transform: uppercase;
+
+		font-size: 40px;
+		font-weight: 400;
+	}
+
+	.hero-text {
+		width: 315px;
+		margin: 60px 0px 88px;
+		font-weight: 500;
+	}
+
+	.book-tour-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 285px;
+		height: 52px;
+		padding: 10px;
+
+		color: #f7fbfb;
+
+		background: #5b86a1;
+		border: none;
+	}
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 128px 0px 193px;
+	}
+}
+
+@media (max-width: 339px) {
+	.hero-section {
+		h1 {
+			width: 285px;
+		}
+		.hero-text {
+			width: 270px;
+		}
+		.book-tour-btn {
+			width: 235px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-section {
+		.hero-content {
+			min-width: 728px;
+			margin: auto;
+			padding: 96px 0px 185px;
+		}
+
+		h1 {
+			font-size: 68px;
+			width: 728px;
+		}
+		.hero-text {
+			font-size: 20px;
+			width: 470px;
+			margin: 40px 0 60px;
+		}
+
+		.book-tour-btn {
+			font-size: 20px;
+			width: 394px;
+			padding: 16px 0;
+		}
+	}
+}
