@@ -21,7 +21,7 @@
 
     
     <script type="module" crossorigin src="/carpathian-tours/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/carpathian-tours/assets/index-2b88a80a.css">
+    <link rel="stylesheet" href="/carpathian-tours/assets/index-e0bfacac.css">
   </head>
   <body>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -186,17 +186,11 @@
           <picture>
             <source
               media="(min-width: 768px)"
-              srcset="
-                ./img/tours/tablet-tours-1.png               1x,
-                ./img/tours/reviews-block/image3_desk@2x.png 2x
-              "
+              srcset="/carpathian-tours/assets/tablet-tours-1-4a44cea4.png 1x, /carpathian-tours/assets/tablet-tours-1@2x-e6689c9c.png 2x"
               type="image/png"
             />
             <source
-              srcset="
-                ./img/tours/mobile-tours-1.png                 1x,
-                ./img/tours/reviews-block/image3_mobile@2x.png 2x
-              "
+              srcset="/carpathian-tours/assets/mobile-tours-1-fc48f054.png 1x, /carpathian-tours/assets/mobile-tours-1@2x-8c4dc77f.png 2x"
               type="image/png"
             />
 
@@ -218,17 +212,11 @@
           <picture>
             <source
               media="(min-width: 768px)"
-              srcset="
-                ./img/tours/tablet-tours-2.png               1x,
-                ./img/tours/reviews-block/image3_desk@2x.png 2x
-              "
+              srcset="/carpathian-tours/assets/tablet-tours-2-8ca0486b.png 1x, /carpathian-tours/assets/tablet-tours-2@2x-18302c6d.png 2x"
               type="image/png"
             />
             <source
-              srcset="
-                ./img/tours/mobile-tours-2.png                 1x,
-                ./img/tours/reviews-block/image3_mobile@2x.png 2x
-              "
+              srcset="/carpathian-tours/assets/mobile-tours-2-3d09b20d.png 1x, /carpathian-tours/assets/mobile-tours-2@2x-1f06cf67.png 2x"
               type="image/png"
             />
 
@@ -249,11 +237,11 @@
           <picture>
             <source
               media="(min-width: 768px)"
-              srcset="/carpathian-tours/assets/tablet-tours-3-083ea34b.png 1x"
+              srcset="/carpathian-tours/assets/tablet-tours-3-083ea34b.png 1x, /carpathian-tours/assets/tablet-tours-3@2x-e5286014.png 2x"
               type="image/png"
             />
             <source
-              srcset="/carpathian-tours/assets/mobile-tours-3-84252e65.png 1x"
+              srcset="/carpathian-tours/assets/mobile-tours-3-84252e65.png 1x, /carpathian-tours/assets/mobile-tours-3@2x-4855ffed.png 2x"
               type="image/png"
             />
 
@@ -927,7 +915,7 @@
     <div class="questions-content">
       <div class="caption-content">
         <h2>Do you have any questions?</h2>
-        <p>
+        <p class="questions-text">
           You can leave your questions here and our manager will call you back
           within 10 minutes
         </p>
@@ -948,7 +936,7 @@
           </li>
         </ul>
 
-        <button type="button">Call me</button>
+        <button type="button" class="btn-questions-form">Call me</button>
       </form>
     </div>
   </div>
@@ -958,74 +946,86 @@
 
     <footer class="footer">
   <section class="footer-section">
-    <h2>Contacts</h2>
     <div class="container footer-container">
-      <div>
-        <ul class="contacts">
-          <li>
-            <svg class="icon-place" width="40" height="40">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-place"></use>
-            </svg>
-            <p>Lviv, st Dorosheko, 44 k</p>
-          </li>
-          <li>
-            <svg class="icon-phone" width="40" height="40">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-phone"></use>
-            </svg>
+      <div class="footer-wrapper">
+        <h2>Contacts</h2>
+        <address class="contacts-info">
+          <ul class="contacts">
+            <li>
+              <svg class="icon-place" width="40" height="40">
+                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-place"></use>
+              </svg>
+              <a
+                href="https://www.google.com/maps/place/Lviv,+st+Dorosheko,+44+k"
+                class="cont-link place link"
+                target="_blank"
+                >Lviv, st Dorosheko, 44 k</a
+              >
+            </li>
+            <li>
+              <svg class="icon-phone" width="40" height="40">
+                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-phone"></use>
+              </svg>
 
-            <a href="tel:+380971626790" class="cont-link link">
-              +38 (097) 162 -67-90
-            </a>
-          </li>
-          <li>
-            <svg class="icon-email" width="40" height="40">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-email"></use>
-            </svg>
+              <a href="tel:+380971626790" class="cont-link tel link">
+                +38 (097) 162 -67-90
+              </a>
+            </li>
+            <li>
+              <svg class="icon-email" width="40" height="40">
+                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-email"></use>
+              </svg>
 
-            <a
-              href="mailto:mandrykarpaty@gmail.com"
-              class="cont-link link email"
-            >
-              mandrykarpaty@gmail.com
-            </a>
-          </li>
-        </ul>
-        <ul class="social">
-          <li>
-            <a href="">
-              <svg class="social-icon telegram" width="40" height="40">
-                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg class="social-icon instagram" width="40" height="40">
-                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg class="social-icon facebook" width="40" height="40">
-                <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+              <a
+                href="mailto:mandrykarpaty@gmail.com"
+                class="cont-link link email"
+              >
+                mandrykarpaty@gmail.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="">
+                <svg class="social-icon telegram" width="40" height="40">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="social-icon instagram" width="40" height="40">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="social-icon facebook" width="40" height="40">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
-      <p class="created">
-        <svg class="icon-copyright" width="16" height="16">
-          <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-copyright"></use>
-        </svg>
-        Created by LelekaSoft
-      </p>
+      <div>
+        <p class="created">
+          <svg class="icon-copyright" width="16" height="16">
+            <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-copyright"></use>
+          </svg>
+          Created by LelekaSoft
+        </p>
+        <a href="https://t.me/barinio" class="creater"
+          >Developer: @Ivan_Barei</a
+        >
+      </div>
     </div>
   </section>
 </footer>
 
     <div class="backdrop is-hidden hero" data-modal>
-  <div class="modal container">
+  <div class="modal hero-modal container">
     <button class="close-btn" type="button" data-modal-close>
       <svg class="close-icon" width="15" height="15">
         <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-close"></use>
@@ -1038,81 +1038,81 @@
     </p>
 
     <form class="form">
-      <input
-        type="text"
-        placeholder="Your name*"
-        class="form-input modal-input"
-      />
-      <input
-        type="text"
-        placeholder="Phone number*"
-        class="form-input modal-input"
-      />
-
-      <div class="container-checkbox">
+      <div class="form-wrapper">
         <input
-          class="check-input visually-hidden"
-          id="hoberla"
-          type="checkbox"
-          name="hoberla"
-          value="true"
+          type="text"
+          placeholder="Your name*"
+          class="form-input modal-input"
         />
-        <label for="hoberla" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Ascent to Hoverla
-        </label>
-      </div>
-
-      <div class="container-checkbox">
         <input
-          class="check-input visually-hidden"
-          id="bukovel"
-          type="checkbox"
-          name="bukovel"
-          value="true"
+          type="text"
+          placeholder="Phone number*"
+          class="form-input modal-input"
         />
-        <label for="bukovel" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Ski tour to Bukovel
-        </label>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              id="hoverla"
+              type="checkbox"
+              name="hoverla"
+              value="true"
+            />
+            <label for="hoverla" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Ascent to Hoverla
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              id="bukovel"
+              type="checkbox"
+              name="bukovel"
+              value="true"
+            />
+            <label for="bukovel" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Ski tour to Bukovel
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <input
+              class="check-input visually-hidden"
+              type="checkbox"
+              id="carpathians"
+              name="carpathians"
+              value="true"
+            />
+            <label for="carpathians" class="check-label form-label">
+              <span class="checkbox-span">
+                <svg class="icon-checkmark" width="20" height="20">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
+                </svg>
+                <svg class="icon-checkbox" width="24" height="24">
+                  <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Week in Carpathians
+            </label>
+          </li>
+        </ul>
       </div>
-
-      <div class="container-checkbox">
-        <input
-          class="check-input visually-hidden"
-          type="checkbox"
-          id="carpathians"
-          name="carpathians"
-          value="true"
-        />
-        <label for="carpathians" class="check-label form-label">
-          <span class="checkbox-span">
-            <svg class="icon-checkmark" width="20" height="20">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkmark"></use>
-            </svg>
-            <svg class="icon-checkbox" width="24" height="24">
-              <use href="/carpathian-tours/assets/icons-a0692e5f.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-          Week in Carpathians
-        </label>
-      </div>
-
-      <button class="modal-form-btn" type="submit">Call me</button>
+      <button class="hero-form-btn" type="submit">Call me</button>
     </form>
   </div>
 </div>
