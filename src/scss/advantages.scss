@@ -12,7 +12,6 @@
 		gap: 8px;
 		padding: 8px 7px 8px 22px;
 		align-items: center;
-
 		background-color: #5b86a1;
 		color: #f7fbfb;
 		font-family: Montserrat;
@@ -36,22 +35,57 @@
 	}
 	.container .list-our-advantages {
 		padding: 80px 62px;
+		gap: 20px;
 		background:
 			url("../img/advantages/tablet-advantages-bg1.png") 0 0/354px no-repeat,
 			url("../img/advantages/tablet-advantages-bg2.png") bottom right/354px no-repeat;
 
-		gap: 20px;
-
 		li {
 			padding: 12px 44px;
-			font-size: 20px;
-
 			.icon-star {
 				width: 40px;
 				height: 40px;
 			}
 			p {
 				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.container .our-advantages {
+		min-width: 1440px;
+	}
+	.container .list-our-advantages {
+		padding: 80px 270px;
+		gap: 0;
+		width: 1170px;
+		height: 668px;
+		background:
+			url("../img/advantages/desktop-advantages-bg1.png") 0 0 / 377px no-repeat,
+			url("../img/advantages/desktop-advantages-bg2.png") center / 377px no-repeat,
+			url("../img/advantages/desktop-advantages-bg3.png") bottom right / 377px no-repeat;
+
+		li {
+			height: 64px;
+			padding: 12px 0 12px 126px;
+			gap: 12px;
+			width: 630px;
+
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+			&:nth-child(3) {
+				margin-bottom: 28px;
+			}
+			.icon-star {
+				width: 40px;
+				height: 40px;
+			}
+
+			p {
+				font-size: 24px;
 			}
 		}
 	}

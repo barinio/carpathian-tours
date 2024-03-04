@@ -7,7 +7,7 @@
 .about-text {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 8px;
 	max-width: 311px;
 
 	color: #202321;
@@ -25,5 +25,11 @@
 	.about-text {
 		max-width: 728px;
 		font-size: 20px;
+	}
+}
+@media (min-width: 1440px) {
+	.about-text {
+		gap: 12px;
+		max-width: 1170px;
 	}
 }
