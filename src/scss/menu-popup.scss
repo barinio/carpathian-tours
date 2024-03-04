@@ -21,6 +21,11 @@
 	min-width: 233px;
 	height: 787px;
 	z-index: 999;
+	@media (width > 767px) {
+		padding: 24px 0 0 82px;
+		width: 374px;
+		height: 818px;
+	}
 }
 .menu-btn.close-btn {
 	top: 20px;
@@ -34,10 +39,10 @@
 .icon-logo {
 	stroke: none;
 	fill: #f7fbfb;
-}
-
-.header-nav {
-	margin-top: 72px;
+	@media (width > 767px) {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 .mobile-menu {
@@ -45,7 +50,12 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 30px;
-	margin-bottom: 64px;
+	margin: 72px 0 64px;
+	@media (width > 767px) {
+		gap: 40px;
+
+		margin: 100px 0 80px;
+	}
 	.link {
 		color: #f7fbfb;
 		font-size: 28px;
@@ -58,7 +68,11 @@
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 32px;
+	@media (width > 767px) and (width < 1440px) {
+		flex-direction: row;
+	}
 }
+
 .social-icon {
 	fill: #f7fbfb;
 	stroke: none;

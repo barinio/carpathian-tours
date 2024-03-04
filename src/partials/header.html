@@ -1,23 +1,29 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">
+    <div class="nav-wrapper">
       <a class="header-logo" href="">
         <svg class="icon-logo" width="40" height="40">
           <use href="./img/icons.svg#icon-logo"></use>
         </svg>
       </a>
+      <nav class="desk-header-nav">
+        <ul class="desk-nav-list">
+          <li><a href="#about" class="desk-nav-link">About</a></li>
+          <li><a href="#yachts" class="desk-nav-link">Tours</a></li>
+          <li><a href="#reviews" class="desk-nav-link">Reviews</a></li>
+          <li><a href="#gallery" class="desk-nav-link">Gallery</a></li>
+          <li><a href="#contacts" class="desk-nav-link">Contacts</a></li>
+        </ul>
+      </nav>
       <button
         class="menu-toggle mobile-menu-toggle-icon js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <img
-          class="header-menu-burger"
-          src="./img/burger-menu.svg"
-          alt="burger-menu"
-          width="40"
-        />
+        <svg class="header-menu-burger" width="40" height="40">
+          <use href="./img/icons.svg#icon-burger-menu"></use>
+        </svg>
       </button>
-    </nav>
+    </div>
   </div>
 </header>

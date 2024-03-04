@@ -5,6 +5,21 @@
 	display: flex;
 	padding: 7.5px;
 	background: none;
+	@media (width > 768px) {
+		padding: 10px;
+	}
+	@media (width > 1440px) {
+		top: 40px;
+		right: 40px;
+	}
+	.close-icon {
+		width: 15px;
+		height: 15px;
+		@media (width > 768px) {
+			width: 20px;
+			height: 20px;
+		}
+	}
 }
 .close-btn:is(:hover, :focus) .close-icon {
 	transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -35,35 +50,47 @@
 	z-index: 1;
 
 	.hero-modal.container {
+		width: 375px;
 		padding: 52px 32px 36px;
-		width: 478px;
-		min-width: 478px;
 		height: 504px;
-		@media (width>767px) {
+
+		@media (width < 375px) {
+			min-width: 300px;
+			width: 95%;
+		}
+		@media (width > 767px) {
+			min-width: 767px;
+			width: 478px;
 			padding: 60px 42px 40px;
 			height: 581px;
 		}
+		@media (width>1440px) {
+			width: 774px;
+			height: 745px;
+			padding: 116px 100px 60px;
+		}
 	}
 }
+
 .modal {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-
 	transform: translate(-50%, -50%) scale(1);
 	background-color: #f7fbfb;
-
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-title {
 	margin-bottom: 20px;
 	font-size: 24px;
 	font-weight: 400;
-
 	@media (width>767px) {
 		font-size: 32px;
 		margin-bottom: 24px;
+	}
+	@media (width > 1440px) {
+		font-size: 60px;
+		margin-bottom: 28px;
 	}
 }
 .modal-text {
@@ -74,11 +101,15 @@
 	text-align: center;
 	padding: 0 15px;
 	margin: auto;
-
 	@media (width>767px) {
 		font-size: 18px;
 		width: 345px;
 		padding: 0 10px;
+	}
+	@media (width > 1440px) {
+		font-size: 24px;
+		width: 523px;
+		padding: 0;
 	}
 }
 
@@ -97,20 +128,28 @@
 	}
 }
 .form-wrapper {
-	@media (width>767px) {
+	@media (width>767px) and (width<1440px) {
 		padding: 0 20px;
 	}
 }
+
 .modal-input {
 	margin-bottom: 20px;
 	@media (width>767px) {
 		margin-bottom: 24px;
 	}
+	@media (width>1440px) {
+		margin-bottom: 28px;
+	}
 }
+
 .checkbox-list {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+	@media (width > 1440px) {
+		padding-left: 11px;
+	}
 }
 
 .form-label {
@@ -121,7 +160,11 @@
 	@media (width>767px) {
 		font-size: 20px;
 	}
+	@media (width>1440px) {
+		font-size: 24px;
+	}
 }
+
 .check-input:checked + .check-label .icon-checkmark {
 	stroke: #202321;
 }
@@ -137,5 +180,10 @@
 		font-size: 20px;
 		margin-top: 32px;
 		height: 56px;
+	}
+	@media (width>1440px) {
+		font-size: 24px;
+		margin-top: 44px;
+		height: 69px;
 	}
 }

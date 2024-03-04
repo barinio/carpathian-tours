@@ -37,6 +37,7 @@
 		}
 	}
 	.hero-content {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -80,7 +81,51 @@
 		.book-tour-btn {
 			font-size: 20px;
 			width: 394px;
-			padding: 16px 0;
 		}
+	}
+}
+@media (width > 767px) and (width < 1440px) {
+	.tours-name {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero-section {
+		.hero-content {
+			min-width: 728px;
+			min-width: 728px;
+			margin: auto;
+
+			padding: 162px 0px 293px;
+		}
+
+		h1 {
+			font-size: 88px;
+			width: 1170px;
+		}
+
+		.hero-text {
+			font-size: 28px;
+			width: 675px;
+			margin: 40px 0 60px;
+		}
+
+		.book-tour-btn {
+			font-size: 24px;
+			width: 575px;
+			height: 69px;
+		}
+	}
+}
+.desktop.social-list {
+	position: absolute;
+	right: 0;
+	bottom: 191px;
+	@media (width < 1440px) {
+		display: none;
+	}
+	.item-social-list {
+		height: 40px;
 	}
 }

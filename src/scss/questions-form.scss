@@ -93,6 +93,10 @@
 		height: 32px;
 		font-size: 20px;
 	}
+	@media (width > 1440px) {
+		height: 37px;
+		font-size: 24px;
+	}
 }
 .btn-questions-form {
 	height: 52px;

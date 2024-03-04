@@ -116,11 +116,13 @@ button {
 	}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
 	.container {
 		max-width: 1280px;
+		min-width: 1170px;
+		padding: 0;
 	}
 	.section {
-		padding: 82px 0;
+		padding: 0;
 	}
 }
