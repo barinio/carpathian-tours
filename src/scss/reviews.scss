@@ -97,19 +97,50 @@
 		flex-direction: row;
 		gap: 20px;
 	}
-
 	.reviews-card {
 		width: 354px;
 	}
-
 	.reviews-card-info {
 		padding-top: 74px;
-
 		height: 370px;
 	}
-
 	.reviews-text {
 		gap: 24px;
 		padding: 0 20px;
+	}
+	.icon-flip-btn {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.reviews-card {
+		width: 377px;
+		height: 570px;
+		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+	}
+	.avatar {
+		margin-top: 72px;
+	}
+	.reviews-card-info {
+		padding-top: 83px;
+		height: 436px;
+	}
+	.reviews-text {
+		display: flex;
+		flex-direction: column;
+		padding: 0 28px;
+		h3 {
+			font-size: 28px;
+			color: var(--blue);
+			font-weight: 600;
+			text-align: center;
+		}
+		p {
+			font-size: 20px;
+			line-height: 1.22;
+			width: 321px;
+		}
 	}
 }
