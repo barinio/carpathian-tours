@@ -1,13 +1,20 @@
 <section class="section gallery">
   <h2>Gallery</h2>
   <div class="container">
-    <!-- Slider main container -->
     <div class="gallery-swiper">
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper list-gallery-card">
-        <!-- Slides -->
         <li class="swiper-slide gallery-card">
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-1.png    1x,
+                ./img/gallery/desktop-gallery-1@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="
@@ -38,6 +45,16 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-2.png    1x,
+                ./img/gallery/desktop-gallery-2@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="
                 ./img/gallery/tablet-gallery-2.png    1x,
@@ -65,6 +82,16 @@
         </li>
         <li class="swiper-slide gallery-card">
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-3.png    1x,
+                ./img/gallery/desktop-gallery-3@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="
@@ -94,6 +121,16 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-4.png    1x,
+                ./img/gallery/desktop-gallery-4@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="
                 ./img/gallery/tablet-gallery-4.png    1x,
@@ -122,6 +159,16 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-5.png    1x,
+                ./img/gallery/desktop-gallery-5@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="
                 ./img/gallery/tablet-gallery-5.png    1x,
@@ -130,6 +177,16 @@
               type="image/png"
               height="134"
               width="354"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-6.png    1x,
+                ./img/gallery/desktop-gallery-6@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
             />
             <source
               srcset="
@@ -148,7 +205,17 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-6.png    1x,
+                ./img/gallery/desktop-gallery-6@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="
@@ -176,7 +243,17 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-7.png    1x,
+                ./img/gallery/desktop-gallery-7@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="
@@ -204,7 +281,17 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-8.png    1x,
+                ./img/gallery/desktop-gallery-8@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="
@@ -231,14 +318,33 @@
             />
           </picture>
         </li>
-        <li class="swiper-slide gallery-card only-mob">
-          <img
-            src="./img/gallery/mobile-gallery-9.png"
-            alt="gallery-9"
-            width="280"
-            height="480"
-            class="gallery-card-image"
-          />
+        <li class="swiper-slide gallery-card hidden-tablet">
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/gallery/desktop-gallery-9.png    1x,
+                ./img/gallery/desktop-gallery-9@2x.png 2x
+              "
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
+              srcset="
+                ./img/gallery/mobile-gallery-9.png    1x,
+                ./img/gallery/mobile-gallery-9@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./img/gallery/mobile-gallery-9.png"
+              alt="gallery-9"
+              width="280"
+              height="480"
+              class="gallery-card-image"
+            />
+          </picture>
         </li>
         <li class="swiper-slide gallery-card only-mob">
           <img
@@ -251,7 +357,6 @@
         </li>
       </ul>
 
-      <!-- If we need navigation buttons -->
       <div class="container-swiper-btns">
         <button class="switch-btn swiper-button-prev">
           <svg class="icon-switch-left" width="28" height="28">
