@@ -135,3 +135,17 @@ button {
 		font-size: 24px;
 	}
 }
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-track {
+	background: linear-gradient(to bottom, #5b86a1, rgb(235, 212, 80));
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	background: linear-gradient(to top, #8b4513, #556b2f);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to bottom, rgb(21, 84, 21), rgb(82, 40, 14));
+}
