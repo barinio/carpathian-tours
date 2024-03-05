@@ -21,7 +21,7 @@
 
     
     <script type="module" crossorigin src="/carpathian-tours/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/carpathian-tours/assets/index-8b85eb1c.css">
+    <link rel="stylesheet" href="/carpathian-tours/assets/index-1ab70fb5.css">
   </head>
   <body>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -45,22 +45,34 @@
         <li><a href="#contacts" class="link js-menu-link">Contacts</a></li>
       </ul>
       <ul class="social-list">
-        <li>
-          <a href="" class="social-link">
+        <li class="item-social-list">
+          <a
+            href="https://web.telegram.org/a/"
+            target="_blank"
+            class="social-link"
+          >
             <svg class="social-icon telegram" width="40" height="40">
               <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="" class="social-link">
+        <li class="item-social-list">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="social-link"
+          >
             <svg class="social-icon instagram" width="40" height="40">
               <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="" class="social-link">
+        <li class="item-social-list">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="social-link"
+          >
             <svg class="social-icon facebook" width="40" height="40">
               <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-facebook"></use>
             </svg>
@@ -114,21 +126,29 @@
     </button>
     <ul class="desktop social-list">
       <li class="item-social-list">
-        <a href="" class="social-link">
+        <a
+          href="https://web.telegram.org/a/"
+          target="_blank"
+          class="social-link"
+        >
           <svg class="social-icon telegram" width="40" height="40">
             <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
       <li class="item-social-list">
-        <a href="" class="social-link">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="social-link"
+        >
           <svg class="social-icon instagram" width="40" height="40">
             <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
       <li class="item-social-list">
-        <a href="" class="social-link">
+        <a href="https://www.facebook.com" target="_blank" class="social-link">
           <svg class="social-icon facebook" width="40" height="40">
             <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-facebook"></use>
           </svg>
@@ -206,11 +226,8 @@
       <section class="section upcoming-tours">
   <h2>Upcoming tours</h2>
   <div class="container">
-    <!-- Slider main container -->
     <div class="upcoming-tours-swiper">
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper list-upcoming-tours">
-        <!-- Slides -->
         <li class="swiper-slide tour-card">
           <picture>
             <source
@@ -222,7 +239,6 @@
               srcset="/carpathian-tours/assets/mobile-tours-1-fc48f054.png 1x, /carpathian-tours/assets/mobile-tours-1@2x-8c4dc77f.png 2x"
               type="image/png"
             />
-
             <img
               src="/carpathian-tours/assets/mobile-tours-1-fc48f054.png"
               alt="hoverla-upcoming-tours"
@@ -230,7 +246,6 @@
               loading="lazy"
             />
           </picture>
-
           <div class="tour-card-text">
             <h3>Ascent to Hoverla</h3>
             <p>From UAH 4,499/person</p>
@@ -248,7 +263,6 @@
               srcset="/carpathian-tours/assets/mobile-tours-2-3d09b20d.png 1x, /carpathian-tours/assets/mobile-tours-2@2x-1f06cf67.png 2x"
               type="image/png"
             />
-
             <img
               src="/carpathian-tours/assets/mobile-tours-2-3d09b20d.png"
               alt="hoverla-upcoming-tours"
@@ -273,7 +287,6 @@
               srcset="/carpathian-tours/assets/mobile-tours-3-84252e65.png 1x, /carpathian-tours/assets/mobile-tours-3@2x-4855ffed.png 2x"
               type="image/png"
             />
-
             <img
               src="/carpathian-tours/assets/mobile-tours-3-84252e65.png"
               alt="hoverla-upcoming-tours"
@@ -290,8 +303,7 @@
           </div>
         </li>
       </ul>
-
-      <div class="switch-btns">
+      <div class="switch-btns desk-hidden">
         <button class="switch-btn swiper-button-prev">
           <svg class="icon-switch-left" width="28" height="28">
             <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-switch-left"></use>
@@ -304,7 +316,7 @@
         </button>
       </div>
       <div class="backdrop is-hidden hoverla tour-backdrop" data-hoverla-modal>
-  <div class="modal container">
+  <div class="modal container tours">
     <button
       class="close-btn tour-modal-close-btn"
       type="button"
@@ -314,14 +326,8 @@
         <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- Slider main container -->
-    <!--  -->
     <div class="hoverla-tour-swiper container-modal">
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper tours-modal__list">
-        <!-- Slides -->
         <li class="swiper-slide tour-modal__item first-day">
           <h3 class="tour-modal-title">Ascent to Hoverla</h3>
           <p class="tour-modal__item-day">1 day</p>
@@ -361,6 +367,8 @@
           </ul>
         </li>
       </ul>
+
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="tour-modal-card">
@@ -381,13 +389,8 @@
         <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- Slider main container -->
     <div class="bukovel-tour-swiper container-modal">
-      <!-- If we need pagination -->
-      <div class="swiper-pagination bukovel-swiper-pagination"></div>
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper tours-modal__list">
-        <!-- Slides -->
         <li class="swiper-slide tour-modal__item first-day">
           <h3 class="tour-modal-title">Ski tour to Bukovel</h3>
           <p class="tour-modal__item-day">1 day</p>
@@ -440,6 +443,7 @@
           </ul>
         </li>
       </ul>
+      <div class="swiper-pagination bukovel-swiper-pagination"></div>
     </div>
 
     <div class="tour-modal-card">
@@ -463,13 +467,8 @@
         <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- Slider main container -->
     <div class="carpathians-tour-swiper container-modal">
-      <!-- If we need pagination -->
-      <div class="swiper-pagination carpathians-swiper-pagination"></div>
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper tours-modal__list">
-        <!-- Slides -->
         <li class="swiper-slide tour-modal__item first-day">
           <h3 class="tour-modal-title">Week in Carpathians</h3>
           <p class="tour-modal__item-day">1 day</p>
@@ -555,6 +554,7 @@
           </ul>
         </li>
       </ul>
+      <div class="swiper-pagination carpathians-swiper-pagination"></div>
     </div>
 
     <div class="tour-modal-card">
@@ -574,14 +574,39 @@
     <ul class="reviews-list">
       <li class="reviews-card">
         <div class="front">
-          <img
-            src="/carpathian-tours/assets/avatar-1-bbb17e5f.png"
-            alt="avatar"
-            class="avatar"
-            height="100"
-            width="100"
-          />
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-avatar-1-ea3801ca.png 1x, /carpathian-tours/assets/desktop-avatar-1@2x-ba17dd59.png 2x"
+              type="image/png"
+              height="125"
+              width="125"
+            />
+            <source
+              srcset="/carpathian-tours/assets/avatar-1-bbb17e5f.png 1x, /carpathian-tours/assets/avatar-1@2x-194b9daf.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/carpathian-tours/assets/avatar-1-bbb17e5f.png"
+              alt="Maria-avatar"
+              class="avatar"
+              height="100"
+              width="100"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/reviews/desktop-review-bg.png    1x,
+                ./img/reviews/desktop-review-bg@2x.png 2x
+              "
+              type="image/png"
+              height="134"
+              width="377"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-review-bg-bb954472.png 1x, /carpathian-tours/assets/tablet-review-bg@2x-49e2ae85.png 2x"
@@ -625,6 +650,13 @@
         <div class="back">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-back-avatar-1-0192d299.png 1x, /carpathian-tours/assets/desktop-back-avatar-1@2x-a5424067.png 2x"
+              type="image/png"
+              height="570"
+              width="377"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-back-avatar-1-c3bb9877.png 1x, /carpathian-tours/assets/tablet-back-avatar-1@2x-e0f440bb.png 2x"
               type="image/png"
@@ -637,7 +669,7 @@
             />
             <img
               src="/carpathian-tours/assets/mobile-back-avatar-1-d30c2968.png"
-              alt=""
+              alt="Maria-photo"
               loading="lazy"
             />
           </picture>
@@ -646,14 +678,39 @@
 
       <li class="reviews-card">
         <div class="front">
-          <img
-            src="/carpathian-tours/assets/avatar-2-0642ed2d.png"
-            alt="avatar"
-            class="avatar"
-            height="100"
-            width="100"
-          />
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-avatar-2-d8811161.png 1x, /carpathian-tours/assets/desktop-avatar-2@2x-e86a6062.png 2x"
+              type="image/png"
+              height="125"
+              width="125"
+            />
+            <source
+              srcset="/carpathian-tours/assets/avatar-2-0642ed2d.png 1x, /carpathian-tours/assets/avatar-2@2x-03b997b5.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/carpathian-tours/assets/avatar-2-0642ed2d.png"
+              alt="Ostap-avatar"
+              class="avatar"
+              height="100"
+              width="100"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/reviews/desktop-review-bg.png    1x,
+                ./img/reviews/desktop-review-bg@2x.png 2x
+              "
+              type="image/png"
+              height="134"
+              width="377"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-review-bg-bb954472.png 1x, /carpathian-tours/assets/tablet-review-bg@2x-49e2ae85.png 2x"
@@ -676,6 +733,7 @@
               width="311"
             />
           </picture>
+
           <div class="reviews-card-info">
             <div class="reviews-text">
               <h3>Ostap</h3>
@@ -695,6 +753,13 @@
         <div class="back">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-back-avatar-2-92c4f1b6.png 1x, /carpathian-tours/assets/desktop-back-avatar-2@2x-b0b69105.png 2x"
+              type="image/png"
+              height="570"
+              width="377"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-back-avatar-2-dd098845.png 1x, /carpathian-tours/assets/tablet-back-avatar-2@2x-237fa7b9.png 2x"
               type="image/png"
@@ -707,7 +772,120 @@
             />
             <img
               src="/carpathian-tours/assets/mobile-back-avatar-2-5db349d9.png"
-              alt=""
+              alt="Ostap-photo"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </li>
+
+      <li class="reviews-card only-desktop">
+        <div class="front">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-avatar-3-fb49c07c.png 1x, /carpathian-tours/assets/desktop-avatar-3@2x-6d4e1b6f.png 2x"
+              type="image/png"
+              height="125"
+              width="125"
+            />
+            <source
+              srcset="
+                ./img/reviews/avatar-3.png    1x,
+                ./img/reviews/avatar-3@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./img/reviews/avatar-3.png"
+              alt="Anita-avatar"
+              class="avatar"
+              height="100"
+              width="100"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/reviews/desktop-review-bg.png    1x,
+                ./img/reviews/desktop-review-bg@2x.png 2x
+              "
+              type="image/png"
+              height="134"
+              width="377"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/carpathian-tours/assets/tablet-review-bg-bb954472.png 1x, /carpathian-tours/assets/tablet-review-bg@2x-49e2ae85.png 2x"
+              type="image/png"
+              height="134"
+              width="354"
+            />
+            <source
+              srcset="/carpathian-tours/assets/mobile-review-bg-123bf233.png 1x, /carpathian-tours/assets/mobile-review-bg@2x-7a08cd98.png 2x"
+              type="image/png"
+              height="134"
+              width="311"
+            />
+            <img
+              src="/carpathian-tours/assets/mobile-review-bg-123bf233.png"
+              alt="review-bg"
+              class="review-bg"
+              loading="lazy"
+              height="134"
+              width="311"
+            />
+          </picture>
+
+          <div class="reviews-card-info">
+            <div class="reviews-text">
+              <h3>Anita</h3>
+              <p>
+                Who is going to the mountains for the first time - this is
+                exactly the tour and the people who organize everything. Guide
+                Makar is interesting stories, selection of a route for a
+                comfortable ascent, motivation and support.
+              </p>
+            </div>
+            <button type="button" class="flip-btn">
+              <svg class="icon-flip-btn" width="32" height="32">
+                <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-flip-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="back">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-back-avatar-3-2854574d.png 1x, /carpathian-tours/assets/desktop-back-avatar-3@2x-21fe1a79.png 2x"
+              type="image/png"
+              height="570"
+              width="377"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews/tablet-back-avatar-3.png    1x,
+                ./img/reviews/tablet-back-avatar-3@2x.png 2x
+              "
+              type="image/png"
+              height="134"
+              width="354"
+            />
+            <source
+              srcset="
+                ./img/reviews/mobile-back-avatar-3.png    1x,
+                ./img/reviews/mobile-back-avatar-3@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./img/reviews/mobile-back-avatar-3.png"
+              alt="Anita-photo"
               loading="lazy"
             />
           </picture>
@@ -720,13 +898,17 @@
       <section class="section gallery">
   <h2>Gallery</h2>
   <div class="container">
-    <!-- Slider main container -->
     <div class="gallery-swiper">
-      <!-- Additional required wrapper -->
       <ul class="swiper-wrapper list-gallery-card">
-        <!-- Slides -->
         <li class="swiper-slide gallery-card">
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-1-a0a5b9f5.png 1x, /carpathian-tours/assets/desktop-gallery-1@2x-865f0ebf.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-1-f62d428f.png 1x, /carpathian-tours/assets/tablet-gallery-1@2x-72a318e1.png 2x"
@@ -751,6 +933,13 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-2-abb73e17.png 1x, /carpathian-tours/assets/desktop-gallery-2@2x-64b7a2c8.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-2-eacee1d3.png 1x, /carpathian-tours/assets/tablet-gallery-2@2x-7888b667.png 2x"
               type="image/png"
@@ -772,6 +961,13 @@
         </li>
         <li class="swiper-slide gallery-card">
           <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-3-17871ba7.png 1x, /carpathian-tours/assets/desktop-gallery-3@2x-719be84b.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-3-eaa492eb.png 1x, /carpathian-tours/assets/tablet-gallery-3@2x-dbdf4ae4.png 2x"
@@ -795,6 +991,13 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-4-36923307.png 1x, /carpathian-tours/assets/desktop-gallery-4@2x-d5319bb8.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-4-ef97e388.png 1x, /carpathian-tours/assets/tablet-gallery-4@2x-b7cc334b.png 2x"
               type="image/png"
@@ -817,11 +1020,25 @@
         <li class="swiper-slide gallery-card">
           <picture>
             <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-5-3590b866.png 1x, /carpathian-tours/assets/desktop-gallery-5@2x-c73ec19b.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-5-69fcac25.png 1x, /carpathian-tours/assets/tablet-gallery-5@2x-f18877eb.png 2x"
               type="image/png"
               height="134"
               width="354"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-6-15addc8b.png 1x, /carpathian-tours/assets/desktop-gallery-6@2x-5135a6cb.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
             />
             <source
               srcset="/carpathian-tours/assets/mobile-gallery-5-793eebb1.png 1x, /carpathian-tours/assets/mobile-gallery-5@2x-ddcf83f0.png 2x"
@@ -837,7 +1054,14 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-6-15addc8b.png 1x, /carpathian-tours/assets/desktop-gallery-6@2x-5135a6cb.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-6-bc795dae.png 1x, /carpathian-tours/assets/tablet-gallery-6@2x-4003ee71.png 2x"
@@ -859,7 +1083,14 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-7-60f53579.png 1x, /carpathian-tours/assets/desktop-gallery-7@2x-31719655.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-7-024ea541.png 1x, /carpathian-tours/assets/tablet-gallery-7@2x-e057e39e.png 2x"
@@ -881,7 +1112,14 @@
           </picture>
         </li>
         <li class="swiper-slide gallery-card">
-          <picture>
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-8-d5097361.png 1x, /carpathian-tours/assets/desktop-gallery-8@2x-2e2a2059.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
             <source
               media="(min-width: 768px)"
               srcset="/carpathian-tours/assets/tablet-gallery-8-96858f63.png 1x, /carpathian-tours/assets/tablet-gallery-8@2x-0199be09.png 2x"
@@ -902,14 +1140,27 @@
             />
           </picture>
         </li>
-        <li class="swiper-slide gallery-card only-mob">
-          <img
-            src="/carpathian-tours/assets/mobile-gallery-9-f664b19a.png"
-            alt="gallery-9"
-            width="280"
-            height="480"
-            class="gallery-card-image"
-          />
+        <li class="swiper-slide gallery-card hidden-tablet">
+          <picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="/carpathian-tours/assets/desktop-gallery-9-f2d1a0fa.png 1x, /carpathian-tours/assets/desktop-gallery-9@2x-5bc941cd.png 2x"
+              type="image/png"
+              height="445"
+              width="575"
+            />
+            <source
+              srcset="/carpathian-tours/assets/mobile-gallery-9-f664b19a.png 1x, /carpathian-tours/assets/mobile-gallery-9@2x-c5840861.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/carpathian-tours/assets/mobile-gallery-9-f664b19a.png"
+              alt="gallery-9"
+              width="280"
+              height="480"
+              class="gallery-card-image"
+            />
+          </picture>
         </li>
         <li class="swiper-slide gallery-card only-mob">
           <img
@@ -922,7 +1173,6 @@
         </li>
       </ul>
 
-      <!-- If we need navigation buttons -->
       <div class="container-swiper-btns">
         <button class="switch-btn swiper-button-prev">
           <svg class="icon-switch-left" width="28" height="28">
@@ -995,7 +1245,6 @@
               <svg class="icon-phone" width="40" height="40">
                 <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-phone"></use>
               </svg>
-
               <a href="tel:+380971626790" class="cont-link tel link">
                 +38 (097) 162 -67-90
               </a>
@@ -1004,7 +1253,6 @@
               <svg class="icon-email" width="40" height="40">
                 <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-email"></use>
               </svg>
-
               <a
                 href="mailto:mandrykarpaty@gmail.com"
                 class="cont-link link email"
@@ -1014,22 +1262,34 @@
             </li>
           </ul>
           <ul class="social">
-            <li>
-              <a href="">
+            <li class="item-social-list">
+              <a
+                href="https://web.telegram.org/a/"
+                target="_blank"
+                class="social-link"
+              >
                 <svg class="social-icon telegram" width="40" height="40">
                   <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="item-social-list">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+              >
                 <svg class="social-icon instagram" width="40" height="40">
                   <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="item-social-list">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social-link"
+              >
                 <svg class="social-icon facebook" width="40" height="40">
                   <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-facebook"></use>
                 </svg>
@@ -1038,7 +1298,7 @@
           </ul>
         </address>
       </div>
-      <div>
+      <div class="author-info">
         <p class="created">
           <svg class="icon-copyright" width="16" height="16">
             <use href="/carpathian-tours/assets/icons-519810d3.svg#icon-copyright"></use>
