@@ -11,11 +11,6 @@
 	.fourth-day {
 		background: url("/img/bukovel/bukovel-modal-bg-4.png") 0 0 / 100% 100% no-repeat;
 	}
-
-	.swiper-pagination {
-		width: 84px;
-		bottom: 20px;
-	}
 }
 
 .bukovel-swiper-pagination-bullet {
@@ -47,5 +42,25 @@
 		.fourth-day {
 			background: url("/img/bukovel/tablet-bukovel-modal-bg-4.png") 0 0 / 100% 100% no-repeat;
 		}
+	}
+}
+@media (min-width: 1440px) {
+	.bukovel {
+		.first-day {
+			background: url("/img/bukovel/tablet-bukovel-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+		}
+		.second-day {
+			background: url("/img/bukovel/tablet-bukovel-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+		}
+		.third-day {
+			background: url("/img/bukovel/tablet-bukovel-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+		}
+		.fourth-day {
+			background: url("/img/bukovel/tablet-bukovel-modal-bg-4.png") 0 0 / 100% 100% no-repeat;
+		}
+	}
+	.bukovel-swiper-pagination-bullet {
+		height: 16px;
+		width: 16px;
 	}
 }

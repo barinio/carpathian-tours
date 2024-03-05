@@ -29,7 +29,6 @@
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
-
 	color: #f7fbfb;
 	line-height: 1.22;
 
@@ -130,27 +129,22 @@
 			background: url("/img/hoverla/tablet-hoverla-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
 		}
 	}
-
 	.container-modal {
 		max-width: 728px;
-
 		.tour-modal-title {
 			padding-left: 60px;
 			font-size: 24px;
 		}
 	}
-
 	.tour-modal__item-day {
 		padding-left: 60px;
 		max-width: 363px;
 	}
-
 	.list-plan {
 		gap: 16px;
 		padding-left: 60px;
 		margin-bottom: 121px;
 	}
-
 	.tour-modal-card {
 		align-items: center;
 		padding: 40px 0;
@@ -162,5 +156,59 @@
 	}
 	.backdrop .container {
 		width: 728px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hoverla {
+		.first-day {
+			background: url("/img/hoverla/tablet-hoverla-modal-bg-1.png") 0 0 / 100% 100% no-repeat;
+		}
+		.second-day {
+			background: url("/img/hoverla/tablet-hoverla-modal-bg-2.png") 0 0 / 100% 100% no-repeat;
+		}
+		.third-day {
+			background: url("/img/hoverla/tablet-hoverla-modal-bg-3.png") 0 0 / 100% 100% no-repeat;
+		}
+	}
+
+	.container-modal {
+		max-width: 1170px;
+		.tour-modal-title {
+			padding: 108px 0 0 100px;
+			font-size: 40px;
+		}
+	}
+	.tour-modal__item-day {
+		padding: 7px 0 7px 100px;
+		max-width: 477px;
+		height: 48px;
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+	.list-plan {
+		gap: 16px;
+		padding-left: 100px;
+		margin-bottom: 175px;
+		p {
+			font-size: 28px;
+		}
+	}
+
+	.tour-modal-card {
+		padding: 48px 0 60px;
+		gap: 28px;
+		button {
+			width: 575px;
+			font-size: 24px;
+			padding: 20px 0;
+		}
+	}
+	.swiper-pagination {
+		bottom: 43px;
+	}
+	.swiper-pagination-bullet {
+		height: 16px;
+		width: 16px;
 	}
 }

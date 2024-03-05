@@ -9,7 +9,7 @@ let gallerySwiper = new Swiper('.gallery-swiper', {
 });
 
 let upcomingTours = new Swiper('.upcoming-tours-swiper', {
-  slidesPerView: getSlidesPerView(),
+  slidesPerView: getUpcomingToursSlidesPerView(),
   direction: 'horizontal',
   spaceBetween: getSpaceBetween(),
 
@@ -122,26 +122,17 @@ let carpathiansTourSwiper = new Swiper('.carpathians-tour-swiper', {
 });
 
 function getSlidesPerView() {
-  if (window.innerWidth <= 767) {
-    return 1;
-  } else {
-    return 2;
-  }
+  if (window.innerWidth < 768) return 1;
+  return 2;
+}
+
+function getUpcomingToursSlidesPerView() {
+  if (window.innerWidth < 768) return 1;
+  if (window.innerWidth >= 1440) return 3;
+  return 2;
 }
 
 function getSpaceBetween() {
-  if (window.innerWidth <= 767) {
-    return 15;
-  } else {
-    return 20;
-  }
+  if (window.innerWidth < 768) return 15;
+  return 20;
 }
-
-// let resizeTimeout;
-// window.addEventListener('resize', function () {
-//   clearTimeout(resizeTimeout);
-//   resizeTimeout = setTimeout(reload, 1000);
-// });
-// function reload() {
-//   location.reload();
-// }
