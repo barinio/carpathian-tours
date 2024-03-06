@@ -6,3 +6,5 @@ import './js/bukovel-modal.js';
 import './js/carpathians-modal.js';
 import './js/tour.js';
 import './js/swiper.js';
+import './js/smooth-scroll.js';
+import './js/go-back-up.js';
