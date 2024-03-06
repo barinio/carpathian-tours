@@ -6,7 +6,6 @@
 	display: flex;
 	gap: 40px;
 	justify-content: center;
-
 	margin-top: 24px;
 
 	button {
@@ -57,7 +56,11 @@
 .tour-card {
 	border: 1px solid var(--blue);
 }
-
+.more-details-btn {
+	&:hover {
+		background: var(--primary-text);
+	}
+}
 @media (min-width: 768px) {
 	.upcoming-tours .container {
 		width: 740px;

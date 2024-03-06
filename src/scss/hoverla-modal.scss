@@ -115,6 +115,9 @@
 	}
 	button {
 		padding: 16px;
+		&:hover {
+			background: var(--primary-text);
+		}
 	}
 }
 @media (min-width: 768px) {

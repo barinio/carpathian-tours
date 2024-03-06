@@ -32,6 +32,9 @@
 		color: #f7fbfb;
 		background: #5b86a1;
 		border: none;
+		&:hover {
+			background: var(--primary-text);
+		}
 		@media (width>767) {
 			height: 56px;
 		}
@@ -81,6 +84,9 @@
 		.book-tour-btn {
 			font-size: 20px;
 			width: 394px;
+			&:hover {
+				background: var(--primary-text);
+			}
 		}
 	}
 }

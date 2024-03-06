@@ -1,10 +1,11 @@
 import './js/hero-modal.js';
+import './js/go-back-up.js';
 import './js/mobile-menu.js';
 import './js/reviews-flip-card.js';
 import './js/hoverla-modal.js';
 import './js/bukovel-modal.js';
 import './js/carpathians-modal.js';
 import './js/tour.js';
-import './js/swiper.js';
 import './js/smooth-scroll.js';
-import './js/go-back-up.js';
+import './js/any-questions-form.js';
+import './js/swiper.js';

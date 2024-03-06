@@ -176,6 +176,9 @@
 	margin-top: 24px;
 	padding: 16px 0;
 	height: 52px;
+	&:hover {
+		background: var(--primary-text);
+	}
 	@media (width>767px) {
 		font-size: 20px;
 		margin-top: 32px;
