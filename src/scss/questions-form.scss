@@ -1,10 +1,16 @@
 .questions-section {
-	background: url("../img/questions/mobile-qustions-bg.png") 0 0 / 100% 100% no-repeat;
+	background:
+		url("../img/questions/mobile-qustions-bg.avif") 0 0 / 100% 100% no-repeat,
+		url("../img/questions/mobile-qustions-bg.png") 0 0 / 100% 100% no-repeat;
 	@media (width >= 768px) {
-		background: url("../img/questions/tablet-qustions-bg.png") 0 0 / 100% 100% no-repeat;
+		background:
+			url("../img/questions/tablet-qustions-bg.avif") 0 0 / 100% 100% no-repeat,
+			url("../img/questions/tablet-qustions-bg.png") 0 0 / 100% 100% no-repeat;
 	}
 	@media (width >= 1440px) {
-		background: url("../img/questions/desktop-qustions-bg.png") 50% / cover no-repeat;
+		background:
+			url("../img/questions/desktop-qustions-bg.avif") 50% / cover no-repeat,
+			url("../img/questions/desktop-qustions-bg.png") 50% / cover no-repeat;
 	}
 
 	.questions-container {

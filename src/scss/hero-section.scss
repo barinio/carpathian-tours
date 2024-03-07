@@ -6,8 +6,9 @@
 	text-align: center;
 	align-items: center;
 
-	background: url("../img/hero_desk_normal.png") 50% / cover no-repeat;
-
+	background:
+		url("../img/hero_desk_normal.avif") 50% / cover no-repeat,
+		url("../img/hero_desk_normal.png") 50% / cover no-repeat;
 	h1 {
 		width: 311px;
 		text-transform: uppercase;

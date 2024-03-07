@@ -1,5 +1,7 @@
 .container .list-our-advantages {
-	background: url("../img/advantages/mobile-advantages-bg.png") 50% / auto auto no-repeat;
+	background:
+		url("../img/advantages/mobile-advantages-bg.avif") 50% / cover no-repeat,
+		url("../img/advantages/mobile-advantages-bg.png") 50% / auto auto no-repeat;
 }
 .list-our-advantages {
 	padding: 84px 2px;
@@ -37,6 +39,8 @@
 		padding: 80px 62px;
 		gap: 20px;
 		background:
+			url("../img/advantages/tablet-advantages-bg1.avif") 0 0/354px no-repeat,
+			url("../img/advantages/tablet-advantages-bg2.avif") bottom right/354px no-repeat,
 			url("../img/advantages/tablet-advantages-bg1.png") 0 0/354px no-repeat,
 			url("../img/advantages/tablet-advantages-bg2.png") bottom right/354px no-repeat;
 
@@ -63,6 +67,9 @@
 		width: 1170px;
 		height: 668px;
 		background:
+			url("../img/advantages/desktop-advantages-bg1.avif") 0 0 / 377px no-repeat,
+			url("../img/advantages/desktop-advantages-bg2.avif") center / 377px no-repeat,
+			url("../img/advantages/desktop-advantages-bg3.avif") bottom right / 377px no-repeat,
 			url("../img/advantages/desktop-advantages-bg1.png") 0 0 / 377px no-repeat,
 			url("../img/advantages/desktop-advantages-bg2.png") center / 377px no-repeat,
 			url("../img/advantages/desktop-advantages-bg3.png") bottom right / 377px no-repeat;
